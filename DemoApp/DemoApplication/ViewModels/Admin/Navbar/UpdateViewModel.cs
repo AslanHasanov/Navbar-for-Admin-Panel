@@ -2,7 +2,7 @@
 
 namespace DemoApplication.ViewModels.Admin.Navbar
 {
-    public class ListItemViewModel
+    public class UpdateViewModel
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -11,21 +11,23 @@ namespace DemoApplication.ViewModels.Admin.Navbar
         public bool IsBold { get; set; }
         public bool IsHeader { get; set; }
         public bool IsFooter { get; set; }
-
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public ListItemViewModel(int id ,string title,string url, int order, bool isBold, bool isHeader, bool isFooter,  DateTime createdAt, DateTime updatedAt)
+       
+        public DateTime UpdateddAt { get; set; }
+        public UpdateViewModel()
         {
-            Id = id;
+
+        }
+        
+        public UpdateViewModel(string title,string url, int order, bool isBold, bool isHeader, bool isFooter,  DateTime updateddAt)
+        {
             Title = title;
             URL = url;
             Order = order;
             IsBold = isBold;
             IsHeader = isHeader;
             IsFooter = isFooter;
-          
-            CreatedAt = createdAt;
-            UpdatedAt = updatedAt;
+            UpdateddAt = updateddAt;
+       
         }
     }
 }

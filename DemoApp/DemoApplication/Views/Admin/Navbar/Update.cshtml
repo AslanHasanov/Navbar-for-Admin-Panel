@@ -1,5 +1,5 @@
 ﻿@using DemoApplication.ViewModels.Admin.Navbar
-@model AddViewModel
+@model UpdateViewModel
 <div class="row">
     <div class="col-lg-12">
         <div class="card">
@@ -8,9 +8,8 @@
             </div>
             <div class="card-body">
                 <div class="general-label">
-                    <form method="POST" asp-route="admin-navbar-add">
+                    <form method="POST" asp-route="admin-navbar-update">
                         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
-
                         <div class="form-group">
                             <label asp-for="Title"></label>
                             <input asp-for="Title" class="form-control">

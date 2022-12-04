@@ -45,9 +45,10 @@
                         <div class="col-lg-6">
                             <div class="main-navigation flex-lg-right">
                                 <ul class="main-menu menu-right ">
-                                    <li class="menu-item">
-                                        <a href="contact.html">Blogs</a>
-                                    </li>
+                                    
+                                    @await Component.InvokeAsync("NavbarHeader")
+
+
                                     <li class="menu-item">
                                         <a asp-controller="home" asp-action="contact">Contact</a>
                                     </li>
@@ -305,34 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" col-xl-3 col-lg-2 col-sm-6">
-                    <div class="single-footer pb--40">
-                        <div class="footer-title">
-                            <h3>Information</h3>
-                        </div>
-                        <ul class="footer-list normal-list">
-                            <li><a href="#">Prices drop</a></li>
-                            <li><a href="#">New products</a></li>
-                            <li><a href="#">Best sales</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Sitemap</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class=" col-xl-3 col-lg-2 col-sm-6">
-                    <div class="single-footer pb--40">
-                        <div class="footer-title">
-                            <h3>Extras</h3>
-                        </div>
-                        <ul class="footer-list normal-list">
-                            <li><a href="#">Delivery</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Stores</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Sitemap</a></li>
-                        </ul>
-                    </div>
-                </div>
+                @await Component.InvokeAsync("NavbarFooter")
                 <div class=" col-xl-3 col-lg-4 col-sm-6">
                     <div class="footer-title">
                         <h3>Newsletter Subscribe</h3>
